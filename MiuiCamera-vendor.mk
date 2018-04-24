@@ -13,12 +13,34 @@
 # limitations under the License.
 
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/MiuiCamera/system/vendor/lib64/libmorpho_group_portrait.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmorpho_group_portrait.so \
+    vendor/xiaomi/MiuiCamera/system/etc/MIUI_Time.ttf:system/etc/MIUI_Time.ttf \
     vendor/xiaomi/MiuiCamera/system/etc/age_gender_bg:system/etc/age_gender_bg \
     vendor/xiaomi/MiuiCamera/system/etc/android_model_facea.dat:system/etc/android_model_facea.dat \
     vendor/xiaomi/MiuiCamera/system/etc/android_model_faceg.dat:system/etc/android_model_faceg.dat \
+    vendor/xiaomi/MiuiCamera/system/etc/crown_156_128.bin:system/etc/crown_156_128.bin \
+    vendor/xiaomi/MiuiCamera/system/etc/dualcamera.png:system/etc/dualcamera.png \
     vendor/xiaomi/MiuiCamera/system/etc/face_goodly_208_180:system/etc/face_goodly_208_180 \
     vendor/xiaomi/MiuiCamera/system/etc/face_ravishing_238_224:system/etc/face_ravishing_238_224 \
     vendor/xiaomi/MiuiCamera/system/etc/face_splendid_274_200:system/etc/face_splendid_274_200 \
+    vendor/xiaomi/MiuiCamera/system/etc/female_bg.png:system/etc/female_bg.png \
+    vendor/xiaomi/MiuiCamera/system/etc/female_icon.png:system/etc/female_icon.png \
     vendor/xiaomi/MiuiCamera/system/etc/lf_facerank_model.bin:system/etc/lf_facerank_model.bin \
-    vendor/xiaomi/MiuiCamera/system/etc/people_gender.dat:system/etc/people_gender.dat
+    vendor/xiaomi/MiuiCamera/system/etc/male_bg.png:system/etc/male_bg.png \
+    vendor/xiaomi/MiuiCamera/system/etc/male_icon.png:system/etc/male_icon.png \
+    vendor/xiaomi/MiuiCamera/system/etc/people_gender.dat:system/etc/people_gender.dat \
+    vendor/xiaomi/MiuiCamera/system/etc/score_bg.png:system/etc/score_bg.png \
+    vendor/xiaomi/MiuiCamera/system/etc/score_icon.png:system/etc/score_icon.png \
+    vendor/xiaomi/MiuiCamera/system/etc/sdm_ys_32p_120_21_5_perturb50.bin:system/etc/sdm_ys_32p_120_21_5_perturb50.bin \
+    vendor/xiaomi/MiuiCamera/system/etc/watermark_font_2300_3199.dat:system/etc/watermark_font_2300_3199.dat \
+    vendor/xiaomi/MiuiCamera/system/fonts/Miui-Bold.ttf:system/fonts/Miui-Bold.ttf \
+    vendor/xiaomi/MiuiCamera/system/fonts/Miui-Light.ttf:system/fonts/Miui-Light.ttf \
+    vendor/xiaomi/MiuiCamera/system/fonts/Miui-Regular.ttf:system/fonts/Miui-Regular.ttf \
+    vendor/xiaomi/MiuiCamera/system/fonts/Miui-Thin.ttf:system/fonts/Miui-Thin.ttf \
+    vendor/xiaomi/MiuiCamera/system/fonts/MiuiEx-Bold.ttf:system/fonts/MiuiEx-Bold.ttf \
+    vendor/xiaomi/MiuiCamera/system/fonts/MiuiEx-Light.ttf:system/fonts/MiuiEx-Light.ttf \
+    vendor/xiaomi/MiuiCamera/system/fonts/MiuiEx-Regular.ttf:system/fonts/MiuiEx-Regular.ttf \
+    vendor/xiaomi/MiuiCamera/vendor/etc/scve/facereco/gModel.dat:vendor/etc/scve/facereco/gModel.dat \
+    vendor/xiaomi/MiuiCamera/vendor/etc/fonts.xml:vendor/etc/fonts.xml
+
+PRODUCT_PACKAGES += \
+    MiuiCamera

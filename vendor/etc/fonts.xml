@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    WARNING: Parsing of this file by third-party apps is not supported. The
+    file, and the font files it refers to, will be renamed and/or moved out
+    from their respective location in the next Android release, and/or the
+    format or syntax of the file may change significantly. If you parse this
+    file for information about system fonts, do it at your own risk. Your
+    application will almost certainly break with the next major Android
+    release.
+
+    In this file, all fonts without names are added to the default list.
+    Fonts are chosen based on a match: full BCP-47 language tag including
+    script, then just language, and finally order (the first font containing
+    the glyph).
+
+    Order of appearance is also the tiebreaker for weight matching. This is
+    the reason why the 900 weights of Roboto precede the 700 weights - we
+    prefer the former when an 800 weight is requested. Since bold spans
+    effectively add 300 to the weight, this ensures that 900 is the bold
+    paired with the 500 weight, ensuring adequate contrast.
+-->
+<familyset version="22">
+    <!-- MIUI ADD: Begin /-->
+    <family name="miui">
+        <font weight="100" style="normal">Miui-Thin.ttf</font>
+        <font weight="300" style="normal">Miui-Light.ttf</font>
+        <font weight="400" style="normal">Miui-Regular.ttf</font>
+        <font weight="700" style="normal">Miui-Bold.ttf</font>
+    </family>
+
+    <alias name="miui-thin" to="miui" weight="100" />
+    <alias name="miui-light" to="miui" weight="300" />
+
+    <family name="miuiex">
+        <font weight="400" style="normal">MiuiEx-Regular.ttf</font>
+        <font weight="700" style="normal">MiuiEx-Bold.ttf</font>
+    </family>
+    <family name="miuiex-light">
+        <font weight="300" style="normal">MiuiEx-Light.ttf</font>
+    </family>
+    <!-- MIUI ADD: End /-->
+</familyset>
