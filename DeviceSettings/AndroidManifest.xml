@@ -12,13 +12,13 @@
 
     <uses-sdk
         android:minSdkVersion="23"
-        android:targetSdkVersion="23" />
+        android:targetSdkVersion="26" />
 
     <application
         android:allowBackup="true"
         android:label="DeviceSettings"
         android:persistent="true"
-        android:theme="@android:style/Theme.Material.Settings">
+        android:theme="@android:style/Theme.DeviceDefault.Settings">
 
         <receiver android:name="com.cyanogenmod.settings.device.BootCompletedReceiver">
             <intent-filter>
