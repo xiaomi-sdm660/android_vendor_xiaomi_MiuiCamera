@@ -39,8 +39,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/MiuiCamera/system/fonts/MiuiEx-Bold.ttf:system/fonts/MiuiEx-Bold.ttf \
     vendor/xiaomi/MiuiCamera/system/fonts/MiuiEx-Light.ttf:system/fonts/MiuiEx-Light.ttf \
     vendor/xiaomi/MiuiCamera/system/fonts/MiuiEx-Regular.ttf:system/fonts/MiuiEx-Regular.ttf \
-    vendor/xiaomi/MiuiCamera/vendor/etc/scve/facereco/gModel.dat:vendor/etc/scve/facereco/gModel.dat \
-    vendor/xiaomi/MiuiCamera/vendor/etc/fonts.xml:vendor/etc/fonts.xml
+    vendor/xiaomi/MiuiCamera/system/vendor/etc/scve/facereco/gModel.dat:system/vendor/etc/scve/facereco/gModel.dat \
+    vendor/xiaomi/MiuiCamera/system/vendor/etc/fonts.xml:system/vendor/etc/fonts.xml \
+    vendor/xiaomi/MiuiCamera/system/vendor/lib64/libmorpho_groupshot.so:system/vendor/lib64/libmorpho_groupshot.so \
+    vendor/xiaomi/MiuiCamera/system/vendor/lib64/libmorpho_group_portrait.so:system/vendor/lib64/libmorpho_group_portrait.so
 
 PRODUCT_PACKAGES += \
     MiuiCamera
