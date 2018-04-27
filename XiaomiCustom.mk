@@ -1,0 +1,66 @@
+# Copyright (C) 2018 The LineageOS Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Overlay
+DEVICE_PACKAGE_OVERLAYS += vendor/xiaomi/XiaomiCustom/overlay
+
+# SELinux
+BOARD_SEPOLICY_DIRS += vendor/xiaomi/XiaomiCustom/sepolicy
+
+PRODUCT_COPY_FILES += \
+    vendor/xiaomi/XiaomiCustom/system/etc/MIUI_Time.ttf:system/etc/MIUI_Time.ttf \
+    vendor/xiaomi/XiaomiCustom/system/etc/age_gender_bg:system/etc/age_gender_bg \
+    vendor/xiaomi/XiaomiCustom/system/etc/android_model_facea.dat:system/etc/android_model_facea.dat \
+    vendor/xiaomi/XiaomiCustom/system/etc/android_model_faceg.dat:system/etc/android_model_faceg.dat \
+    vendor/xiaomi/XiaomiCustom/system/etc/crown_156_128.bin:system/etc/crown_156_128.bin \
+    vendor/xiaomi/XiaomiCustom/system/etc/dualcamera.png:system/etc/dualcamera.png \
+    vendor/xiaomi/XiaomiCustom/system/etc/face_goodly_208_180:system/etc/face_goodly_208_180 \
+    vendor/xiaomi/XiaomiCustom/system/etc/face_ravishing_238_224:system/etc/face_ravishing_238_224 \
+    vendor/xiaomi/XiaomiCustom/system/etc/face_splendid_274_200:system/etc/face_splendid_274_200 \
+    vendor/xiaomi/XiaomiCustom/system/etc/female_bg.png:system/etc/female_bg.png \
+    vendor/xiaomi/XiaomiCustom/system/etc/female_icon.png:system/etc/female_icon.png \
+    vendor/xiaomi/XiaomiCustom/system/etc/lf_facerank_model.bin:system/etc/lf_facerank_model.bin \
+    vendor/xiaomi/XiaomiCustom/system/etc/male_bg.png:system/etc/male_bg.png \
+    vendor/xiaomi/XiaomiCustom/system/etc/male_icon.png:system/etc/male_icon.png \
+    vendor/xiaomi/XiaomiCustom/system/etc/people_gender.dat:system/etc/people_gender.dat \
+    vendor/xiaomi/XiaomiCustom/system/etc/score_bg.png:system/etc/score_bg.png \
+    vendor/xiaomi/XiaomiCustom/system/etc/score_icon.png:system/etc/score_icon.png \
+    vendor/xiaomi/XiaomiCustom/system/etc/sdm_ys_32p_120_21_5_perturb50.bin:system/etc/sdm_ys_32p_120_21_5_perturb50.bin \
+    vendor/xiaomi/XiaomiCustom/system/etc/watermark_font_2300_3199.dat:system/etc/watermark_font_2300_3199.dat \
+    vendor/xiaomi/XiaomiCustom/system/fonts/Miui-Bold.ttf:system/fonts/Miui-Bold.ttf \
+    vendor/xiaomi/XiaomiCustom/system/fonts/Miui-Light.ttf:system/fonts/Miui-Light.ttf \
+    vendor/xiaomi/XiaomiCustom/system/fonts/Miui-Regular.ttf:system/fonts/Miui-Regular.ttf \
+    vendor/xiaomi/XiaomiCustom/system/fonts/Miui-Thin.ttf:system/fonts/Miui-Thin.ttf \
+    vendor/xiaomi/XiaomiCustom/system/fonts/MiuiEx-Bold.ttf:system/fonts/MiuiEx-Bold.ttf \
+    vendor/xiaomi/XiaomiCustom/system/fonts/MiuiEx-Light.ttf:system/fonts/MiuiEx-Light.ttf \
+    vendor/xiaomi/XiaomiCustom/system/fonts/MiuiEx-Regular.ttf:system/fonts/MiuiEx-Regular.ttf \
+    vendor/xiaomi/XiaomiCustom/system/vendor/etc/scve/facereco/gModel.dat:system/vendor/etc/scve/facereco/gModel.dat \
+    vendor/xiaomi/XiaomiCustom/system/vendor/etc/fonts.xml:system/vendor/etc/fonts.xml \
+    vendor/xiaomi/XiaomiCustom/system/vendor/lib64/libmorpho_groupshot.so:system/vendor/lib64/libmorpho_groupshot.so \
+    vendor/xiaomi/XiaomiCustom/system/vendor/lib64/libmorpho_group_portrait.so:system/vendor/lib64/libmorpho_group_portrait.so
+
+# Google Lens
+PRODUCT_COPY_FILES += \
+    vendor/xiaomi/XiaomiCustom/pixelstyle/etc/sysconfig/pixel_2017_exclusive.xml:system/etc/sysconfig/pixel_2017_exclusive.xml \
+    vendor/xiaomi/XiaomiCustom/pixelstyle/etc/sysconfig/pixel_2017.xml:system/etc/sysconfig/pixel_2017.xml \
+    vendor/xiaomi/XiaomiCustom/pixelstyle/etc/sysconfig/nexus.xml:system/etc/sysconfig/nexus.xml \
+    vendor/xiaomi/XiaomiCustom/pixelstyle/etc/sysconfig/google_build.xml:system/etc/sysconfig/google_build.xml
+
+PRODUCT_PACKAGES += \
+    MiuiCamera \
+    XiaomiParts
+
+# Remove packages
+PRODUCT_PACKAGES += \
+    Remove
