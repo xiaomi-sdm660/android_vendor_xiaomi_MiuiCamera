@@ -57,3 +57,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     MiuiCamera \
     XiaomiParts
+
+# Remove packages
+PRODUCT_PACKAGES += \
+    Remove
