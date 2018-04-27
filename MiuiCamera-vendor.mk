@@ -15,6 +15,9 @@
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/xiaomi/MiuiCamera/overlay
 
+# SELinux
+BOARD_SEPOLICY_DIRS += vendor/xiaomi/MiuiCamera/sepolicy
+
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/MiuiCamera/system/etc/MIUI_Time.ttf:system/etc/MIUI_Time.ttf \
     vendor/xiaomi/MiuiCamera/system/etc/age_gender_bg:system/etc/age_gender_bg \
