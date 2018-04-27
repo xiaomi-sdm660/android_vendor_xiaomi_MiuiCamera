@@ -12,6 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Overlay
+DEVICE_PACKAGE_OVERLAYS += vendor/xiaomi/MiuiCamera/overlay
+
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/MiuiCamera/system/etc/MIUI_Time.ttf:system/etc/MIUI_Time.ttf \
     vendor/xiaomi/MiuiCamera/system/etc/age_gender_bg:system/etc/age_gender_bg \
@@ -43,6 +46,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/MiuiCamera/system/vendor/etc/fonts.xml:system/vendor/etc/fonts.xml \
     vendor/xiaomi/MiuiCamera/system/vendor/lib64/libmorpho_groupshot.so:system/vendor/lib64/libmorpho_groupshot.so \
     vendor/xiaomi/MiuiCamera/system/vendor/lib64/libmorpho_group_portrait.so:system/vendor/lib64/libmorpho_group_portrait.so
+
+# Google Lens
+PRODUCT_COPY_FILES += \
+    vendor/xiaomi/MiuiCamera/pixelstyle/etc/sysconfig/pixel_2017_exclusive.xml:system/etc/sysconfig/pixel_2017_exclusive.xml \
+    vendor/xiaomi/MiuiCamera/pixelstyle/etc/sysconfig/pixel_2017.xml:system/etc/sysconfig/pixel_2017.xml \
+    vendor/xiaomi/MiuiCamera/pixelstyle/etc/sysconfig/nexus.xml:system/etc/sysconfig/nexus.xml \
+    vendor/xiaomi/MiuiCamera/pixelstyle/etc/sysconfig/google_build.xml:system/etc/sysconfig/google_build.xml
 
 PRODUCT_PACKAGES += \
     MiuiCamera \
