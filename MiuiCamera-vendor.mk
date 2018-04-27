@@ -45,4 +45,5 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/MiuiCamera/system/vendor/lib64/libmorpho_group_portrait.so:system/vendor/lib64/libmorpho_group_portrait.so
 
 PRODUCT_PACKAGES += \
-    MiuiCamera
+    MiuiCamera \
+    XiaomiParts
