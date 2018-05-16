@@ -47,6 +47,13 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_PATH)/system/fonts/MiuiEx-Bold.ttf:system/fonts/MiuiEx-Bold.ttf \
     $(VENDOR_PATH)/system/fonts/MiuiEx-Light.ttf:system/fonts/MiuiEx-Light.ttf \
     $(VENDOR_PATH)/system/fonts/MiuiEx-Regular.ttf:system/fonts/MiuiEx-Regular.ttf \
+    $(VENDOR_PATH)/system/lib/libCameraEffectJNI.so:system/lib/libCameraEffectJNI.so \
+    $(VENDOR_PATH)/system/lib64/libCameraEffectJNI.so:system/lib64/libCameraEffectJNI.so \
+    $(VENDOR_PATH)/system/lib64/libmorpho_group_portrait.so:system/lib64/libmorpho_group_portrait.so \
+    $(VENDOR_PATH)/system/lib64/libmorpho_groupshot.so:system/lib64/libmorpho_groupshot.so \
+    $(VENDOR_PATH)/system/lib64/libmorpho_memory_allocator.so:system/lib64/libmorpho_memory_allocator.so \
+    $(VENDOR_PATH)/system/lib64/libmorpho_panorama.so:system/lib64/libmorpho_panorama.so \
+    $(VENDOR_PATH)/system/lib64/libmorpho_panorama_gp.so:system/lib64/libmorpho_panorama_gp.so \
     $(VENDOR_PATH)/system/vendor/etc/scve/facereco/gModel.dat:system/vendor/etc/scve/facereco/gModel.dat \
     $(VENDOR_PATH)/system/vendor/etc/fonts.xml:system/vendor/etc/fonts.xml \
     $(VENDOR_PATH)/system/vendor/lib64/libmorpho_groupshot.so:system/vendor/lib64/libmorpho_groupshot.so \
