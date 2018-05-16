@@ -1,0 +1,4 @@
+allow hal_camera_default debugfs:dir { open read };
+allow hal_camera_default debugfs:file { open read };
+allow hal_camera_default self:capability sys_nice;
+allow hal_camera_default shell_data_file:dir search;
