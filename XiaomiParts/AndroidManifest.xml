@@ -34,5 +34,11 @@
                 <meta-data android:name="com.android.settings.summary"
                            android:resource="@string/advanced_settings_summary"/>
         </activity>
+
+        <receiver android:name=".Startup" >
+            <intent-filter android:priority="100">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
     </application>
 </manifest>
