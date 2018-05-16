@@ -15,12 +15,12 @@
 -->
 <resources>
     <string name="app_name">Xiaomi</string>
-    <string name="advanced_settings">Xiaomi</string>
-    <string name="advanced_settings_summary">Настройки устройства</string>
+    <string name="advanced_settings">Настройки Xiaomi</string>
+    <string name="advanced_settings_summary">Дополнительные настройки</string>
     <string name="category_vibrator">Вибрация</string>
-    <string name="vib_strength_title_head">Сила</string>
-    <string name="vib_strength_summary_head">Установить силу вибрации</string>
-<!-- devicesettings -->
+    <string name="vib_strength_title_head">Сила вибрации</string>
+    <string name="vib_strength_summary_head">Настройка силы вибрации</string>
+    <!-- devicesettings -->
     <string name="category_devicesettings">Датчики</string>
     <string name="devicesettings_title">Жесты</string>
     <string name="devicesettings_summary">жесты уведомлений и пробуждения</string>
