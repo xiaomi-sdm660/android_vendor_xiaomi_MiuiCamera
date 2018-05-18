@@ -21,6 +21,7 @@ DEVICE_PACKAGE_OVERLAYS += $(VENDOR_PATH)/overlay
 BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
 
 PRODUCT_COPY_FILES += \
+    $(VENDOR_PATH)/system/etc/device_features/sagit.xml:system/etc/device_features/sagit.xml \
     $(VENDOR_PATH)/system/etc/MIUI_Time.ttf:system/etc/MIUI_Time.ttf \
     $(VENDOR_PATH)/system/etc/age_gender_bg:system/etc/age_gender_bg \
     $(VENDOR_PATH)/system/etc/android_model_facea.dat:system/etc/android_model_facea.dat \
