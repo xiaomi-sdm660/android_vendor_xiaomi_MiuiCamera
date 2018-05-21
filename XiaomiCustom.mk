@@ -56,6 +56,15 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_PATH)/system/vendor/etc/scve/facereco/gModel.dat:system/vendor/etc/scve/facereco/gModel.dat \
     $(VENDOR_PATH)/system/vendor/etc/fonts.xml:system/vendor/etc/fonts.xml
 
+# AptX
+PRODUCT_COPY_FILES += \
+    $(VENDOR_PATH)/system/vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so:system/vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so \
+    $(VENDOR_PATH)/system/vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so:system/vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so \
+    $(VENDOR_PATH)/system/vendor/lib/libaptXHD_encoder.so:system/vendor/lib/libaptXHD_encoder.so \
+    $(VENDOR_PATH)/system/vendor/lib/libaptX_encoder.so:system/vendor/lib/libaptX_encoder.so \
+    $(VENDOR_PATH)/system/vendor/lib64/libaptXHD_encoder.so:system/vendor/lib64/libaptXHD_encoder.so \
+    $(VENDOR_PATH)/system/vendor/lib64/libaptX_encoder.so:system/vendor/lib64/libaptX_encoder.so
+
 # Google Lens
 PRODUCT_COPY_FILES += \
     $(VENDOR_PATH)/pixelstyle/etc/sysconfig/pixel_2017_exclusive.xml:system/etc/sysconfig/pixel_2017_exclusive.xml \
