@@ -79,3 +79,7 @@ PRODUCT_PACKAGES += \
 # Remove packages
 PRODUCT_PACKAGES += \
     Remove
+
+# Init
+PRODUCT_PACKAGES += \
+    init.xiaomi_custom.rc
