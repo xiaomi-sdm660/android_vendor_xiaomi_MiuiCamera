@@ -34,6 +34,8 @@
     <bool name="support_interview_record_param">true</bool>
     <!--whether the device supports stereo record-->
     <bool name="support_stereo_record">true</bool>
+    <!--whether the device supports hd record param-->
+    <bool name="support_hd_record_param">true</bool>
     <!--whether the device supports screen paper mode-->
     <bool name="support_screen_paper_mode">true</bool>
     <!--whether the device supports screen key position swap-->
@@ -53,7 +55,9 @@
     <!--whether the device supports dolby-->
     <bool name="support_dolby">false</bool>
     <!--which screen effect options should be show-->
-    <integer name="screen_effect_supported">0</integer>
+    <integer name="screen_effect_supported">7</integer>
+    <!--whether support the new automatic brightness logic-->
+    <bool name="support_autobrightness_optimize">true</bool>
     <!--whether the device supports wapi-->
     <bool name="support_wapi">true</bool>
     <!--whether the device is mediatek-->
@@ -70,6 +74,8 @@
     <bool name="support_erase_external_storage">true</bool>
     <!--whether the device supports headset-->
     <bool name="support_headset">true</bool>
+    <!--whether the device supports choose connect mode-->
+    <bool name="support_choose_connect_mode">true</bool>
     <!--whether the device supports nvdia wifi display-->
     <bool name="support_nvdia_wifi_display">false</bool>
     <!--whether the device supports eap sim-->
@@ -106,6 +112,8 @@
     <bool name="support_device_encrypt">true</bool>
     <!--whether support burst shoot in camera-->
     <bool name="support_camera_burst_shoot">true</bool>
+    <!--whether support burst shoot denoise in camera-->
+    <bool name="support_camera_burst_shoot_denoise">true</bool>
     <!--whether support solid recording in camera-->
     <bool name="support_camera_movie_solid">false</bool>
     <!--whether support shader effect in camera-->
@@ -166,10 +174,12 @@
     <bool name="is_camera_hold_blur_background">false</bool>
     <!--whether support peaking mf in camera-->
     <bool name="support_camera_peaking_mf">true</bool>
+    <!--whether support pause in hfr recording-->
+    <bool name="support_hfr_video_pause">false</bool>
     <!--whether support gradienter in camera-->
     <bool name="support_camera_gradienter">true</bool>
     <!--whether scan qrcode with lower frequency in camera-->
-    <bool name="is_camera_lower_qrscan_frequency">false</bool>
+    <bool name="is_camera_lower_qrscan_frequency">true</bool>
     <!--whether listen frame with single subthread looper in camera-->
     <bool name="is_camera_preview_with_subthread_looper">true</bool>
     <!--whether add watermark in camera app-->
@@ -206,14 +216,14 @@
     <integer name="camera_reduce_preview_flag">14</integer>
     <!--max number of burst images one time -->
     <integer name="burst_shoot_count">100</integer>
+    <!--b0:flash b1:hdr b2:motion b3:night-->
+    <integer name="camera_supported_asd">9</integer>
     <!--whether rotate the final image in camera isp-->
     <bool name="is_camera_isp_rotated">false</bool>
     <!--max cpu freq of the device-->
     <integer name="cpu_max_freq">235</integer>
     <!--Successful flag of camera continuous auto focus  result-->
     <integer name="camera_focus_success_flag">2</integer>
-    <!--b0:flash b1:hdr b2:motion b3:night-->
-    <integer name="camera_supported_asd">9</integer>
     <!--total steps number of camera compensation-->
     <float name="camera_exposure_compensation_steps_num">12.0</float>
     <!--Left margin of count down parent layout for front camera-->
