@@ -16,8 +16,6 @@
     <bool name="support_oldman_mode">false</bool>
     <!--whether the device is dual sim card-->
     <bool name="support_dual_sim_card">true</bool>
-    <!--whether the device support 4G+-->
-    <bool name="support_ca">true</bool>
     <!--whether the device has dual systems-->
     <bool name="is_dual_system">false</bool>
     <!--whether the device is emulated sdcard-->
@@ -38,12 +36,6 @@
     <bool name="support_hd_record_param">true</bool>
     <!--whether the device supports screen paper mode-->
     <bool name="support_screen_paper_mode">true</bool>
-    <!--whether the device supports screen key position swap-->
-    <bool name="support_screen_key_swap">false</bool>
-    <!--whether the device supports led light-->
-    <bool name="support_led_light">true</bool>
-    <!--whether the device supports colorful led light-->
-    <bool name="support_led_color">false</bool>
     <!--whether the device supports button light-->
     <bool name="support_button_light">true</bool>
     <!--whether the device supports emulated storage-->
@@ -145,7 +137,7 @@
     <!--whether taking full size effect image in camera-->
     <bool name="is_full_size_effect">true</bool>
     <!--whether support aohdr in camera-->
-    <bool name="support_camera_aohdr">true</bool>
+    <bool name="support_camera_aohdr">false</bool>
     <!--whether support high frame recording in camera-->
     <bool name="support_camera_hfr">true</bool>
     <!--whether support chroma flash in camera-->
@@ -200,6 +192,8 @@
     <bool name="support_edge_handgrip">false</bool>
     <!--wheater support validate device when syste upadte -->
     <bool name="support_ota_validate">false</bool>
+    <!--whether show basic info items-->
+    <bool name="support_show_basic_items">true</bool>
     <!--whether show my device-->
     <bool name="support_my_device">true</bool>
     <!--wheater support show credentials-->
@@ -243,8 +237,8 @@
         <item>uinput-goodix</item>
     </string-array>
     <bool name="support_tap_fingerprint_sensor_to_home">false</bool>
-    <!--NFC related-->
-    <bool name="support_se_route">true</bool>
+    <!-- type of soter finger pay, config by owner of soter -->
+    <integer name="type_soter_finger_pay">2</integer>
     <!--wheater the device supports persist screen color in driver-->
     <bool name="support_screen_color_persist">true</bool>
     <!--cpu combination -->
@@ -253,8 +247,24 @@
     <integer name="case_therm">9</integer>
     <!--whether the middle keycode is KEYCODE_DPAD_CENTER-->
     <bool name="middle_keycode_is_dpad_center">false</bool>
-    <!--support nfc search -->
+    <!--wheater the device supports force touch -->
+    <bool name="support_force_touch">false</bool>
+    <!-- font scale for largeui mode -->
+    <float name="smallui_font_scale">0.86</float>
+    <!-- font scale for largeui mode -->
+    <float name="mediumui_font_scale">1.05</float>
+    <!-- font scale for largeui mode -->
+    <float name="largeui_font_scale">1.25</float>
+    <!-- font scale for largeui mode -->
+    <float name="hugeui_font_scale">1.40</float>
+    <!-- font scale for largeui mode -->
+    <float name="godzillaui_font_scale">1.40</float>
+    <!-- support nfc -->
     <bool name="support_nfc">true</bool>
+    <!-- NFC related -->
+    <bool name="support_se_route">true</bool>
+    <!--whether the device supports screen key position swap-->
+    <bool name="support_screen_key_swap">true</bool>
     <!--In these app access camera, add beautify parameter -->
     <string-array name="add_still_beautify_list">
         <item>com.tencent.mm</item>
@@ -265,8 +275,27 @@
     <string name="extra_still_beautify_value">i:2</string>
     <!--min previewsize value for video call case-->
     <integer name="extra_min_preview_size">921600</integer>
-    <!-- Support Sign Verify In Cust Partition-->
-    <bool name="support_sign_verify_in_cust">true</bool>
-    <!-- boost gpu freq to make up sampling latency, used on msm8953 only -->
-    <bool name="boost_gpu">false</bool>
+    <!--Led light features-->
+    <bool name="support_led_light">true</bool>
+    <bool name="support_led_color">false</bool>
+    <bool name="support_audio_loopback">true</bool>
+    <bool name="support_new_silentmode">true</bool>
+    <!-- whether CN hardware can flash Global rom -->
+    <bool name="enable_flash_global">true</bool>
+    <!-- whether the device is cmcc strategic, should use it with Build.IS_CM_CUSTOMIZATION together -->
+    <bool name="cmcc_strategic_phone">true</bool>
+    <!--whether support optical zoom in camera-->
+    <bool name="is_support_optical_zoom">true</bool>
+    <!--whether support portrait in camera-->
+    <bool name="is_support_portrait">true</bool>
+    <!--whether support add watermark on bottom left of picture-->
+    <bool name="support_picture_watermark">true</bool>
+    <!--whether sensor_has_latency-->
+    <bool name="sensor_has_latency">true</bool>
+    <!--whether support freeform mode in game mode-->
+    <bool name="support_freeform_reply">true</bool>
+    <!--whether front camera support bokeh or not-->
+    <bool name="support_front_bokeh">true</bool>
+    <!--whether camera support portrait mode switch -->
+    <bool name="camera_is_support_portrait_switch">true</bool>
 </features>
