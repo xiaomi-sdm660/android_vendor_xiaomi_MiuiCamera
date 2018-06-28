@@ -75,18 +75,18 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_PATH)/system/lib64/libmorpho_memory_allocator.so:system/lib64/libmorpho_memory_allocator.so \
     $(VENDOR_PATH)/system/lib64/libmorpho_panorama.so:system/lib64/libmorpho_panorama.so \
     $(VENDOR_PATH)/system/lib64/libmorpho_panorama_gp.so:system/lib64/libmorpho_panorama_gp.so \
-    $(VENDOR_PATH)/system/vendor/etc/scve/facereco/gModel.dat:system/vendor/etc/scve/facereco/gModel.dat \
-    $(VENDOR_PATH)/system/vendor/etc/fonts.xml:system/vendor/etc/fonts.xml \
-    $(VENDOR_PATH)/system/vendor/lib/libdualcameraddm.so:system/vendor/lib/libdualcameraddm.so
+    $(VENDOR_PATH)/system/vendor/etc/scve/facereco/gModel.dat:$(TARGET_COPY_OUT_VENDOR)/etc/scve/facereco/gModel.dat \
+    $(VENDOR_PATH)/system/vendor/etc/fonts.xml:$(TARGET_COPY_OUT_VENDOR)/etc/fonts.xml \
+    $(VENDOR_PATH)/system/vendor/lib/libdualcameraddm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdualcameraddm.so
 
 # AptX
 PRODUCT_COPY_FILES += \
-    $(VENDOR_PATH)/system/vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so:system/vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so \
-    $(VENDOR_PATH)/system/vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so:system/vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so \
-    $(VENDOR_PATH)/system/vendor/lib/libaptXHD_encoder.so:system/vendor/lib/libaptXHD_encoder.so \
-    $(VENDOR_PATH)/system/vendor/lib/libaptX_encoder.so:system/vendor/lib/libaptX_encoder.so \
-    $(VENDOR_PATH)/system/vendor/lib64/libaptXHD_encoder.so:system/vendor/lib64/libaptXHD_encoder.so \
-    $(VENDOR_PATH)/system/vendor/lib64/libaptX_encoder.so:system/vendor/lib64/libaptX_encoder.so
+    $(VENDOR_PATH)/system/vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_Classic.so \
+    $(VENDOR_PATH)/system/vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_HD.so \
+    $(VENDOR_PATH)/system/vendor/lib/libaptXHD_encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaptXHD_encoder.so \
+    $(VENDOR_PATH)/system/vendor/lib/libaptX_encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaptX_encoder.so \
+    $(VENDOR_PATH)/system/vendor/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaptXHD_encoder.so \
+    $(VENDOR_PATH)/system/vendor/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaptX_encoder.so
 
 # Google Lens
 PRODUCT_COPY_FILES += \
