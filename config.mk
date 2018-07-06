@@ -12,10 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-VENDOR_PATH := vendor/XiaomiCustom
+VENDOR_PATH := vendor/xiaomi/MiuiCamera
 
 PRODUCT_COPY_FILES += \
-    $(VENDOR_PATH)/system/etc/device_features/sagit.xml:system/etc/device_features/sagit.xml \
+    $(VENDOR_PATH)/system/etc/device_features/$(TARGET_DEVICE).xml:system/etc/device_features/$(TARGET_DEVICE).xml \
     $(VENDOR_PATH)/system/etc/MIUI_Time.ttf:system/etc/MIUI_Time.ttf \
     $(VENDOR_PATH)/system/etc/age_gender_bg:system/etc/age_gender_bg \
     $(VENDOR_PATH)/system/etc/crown_156_128.bin:system/etc/crown_156_128.bin \
@@ -69,13 +69,9 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_PATH)/system/lib64/libmorpho_memory_allocator.so:system/lib64/libmorpho_memory_allocator.so \
     $(VENDOR_PATH)/system/lib64/libmorpho_panorama.so:system/lib64/libmorpho_panorama.so \
     $(VENDOR_PATH)/system/lib64/libmorpho_panorama_gp.so:system/lib64/libmorpho_panorama_gp.so \
-    $(VENDOR_PATH)/system/vendor/etc/scve/facereco/gModel.dat:$(TARGET_COPY_OUT_VENDOR)/etc/scve/facereco/gModel.dat \
-    $(VENDOR_PATH)/system/vendor/etc/fonts.xml:$(TARGET_COPY_OUT_VENDOR)/etc/fonts.xml \
-    $(VENDOR_PATH)/system/vendor/lib/libdualcameraddm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdualcameraddm.so
+    $(VENDOR_PATH)/vendor/etc/scve/facereco/gModel.dat:$(TARGET_COPY_OUT_VENDOR)/etc/scve/facereco/gModel.dat \
+    $(VENDOR_PATH)/vendor/etc/fonts.xml:$(TARGET_COPY_OUT_VENDOR)/etc/fonts.xml \
+    $(VENDOR_PATH)/vendor/lib/libdualcameraddm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdualcameraddm.so
 
 PRODUCT_PACKAGES += \
     MiuiCamera
-
-# Init
-PRODUCT_PACKAGES += \
-    init.xiaomi_custom.rc
