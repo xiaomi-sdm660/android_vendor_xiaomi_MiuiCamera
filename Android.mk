@@ -14,6 +14,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter sagit chiron whyred,$(TARGET_DEVICE)),)
+ifneq ($(filter whyred,$(TARGET_DEVICE)),)
 include $(call all-subdir-makefiles)
 endif

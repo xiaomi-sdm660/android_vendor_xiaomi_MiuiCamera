@@ -15,7 +15,7 @@
 VENDOR_PATH := vendor/xiaomi/MiuiCamera
 
 PRODUCT_COPY_FILES += \
-    $(VENDOR_PATH)/system/etc/device_features/$(TARGET_DEVICE).xml:system/etc/device_features/$(TARGET_DEVICE).xml \
+    $(VENDOR_PATH)/system/etc/device_features/whyred.xml:system/etc/device_features/whyred.xml \
     $(VENDOR_PATH)/system/etc/MIUI_Time.ttf:system/etc/MIUI_Time.ttf \
     $(VENDOR_PATH)/system/etc/age_gender_bg:system/etc/age_gender_bg \
     $(VENDOR_PATH)/system/etc/crown_156_128.bin:system/etc/crown_156_128.bin \
