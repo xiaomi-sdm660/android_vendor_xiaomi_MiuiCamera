@@ -14,12 +14,6 @@
 
 VENDOR_PATH := vendor/XiaomiCustom
 
-# Overlay
-DEVICE_PACKAGE_OVERLAYS += $(VENDOR_PATH)/overlay
-
-# SELinux
-BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
-
 PRODUCT_COPY_FILES += \
     $(VENDOR_PATH)/system/etc/device_features/sagit.xml:system/etc/device_features/sagit.xml \
     $(VENDOR_PATH)/system/etc/MIUI_Time.ttf:system/etc/MIUI_Time.ttf \
@@ -79,29 +73,8 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_PATH)/system/vendor/etc/fonts.xml:$(TARGET_COPY_OUT_VENDOR)/etc/fonts.xml \
     $(VENDOR_PATH)/system/vendor/lib/libdualcameraddm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdualcameraddm.so
 
-# AptX
-PRODUCT_COPY_FILES += \
-    $(VENDOR_PATH)/system/vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_Classic.so \
-    $(VENDOR_PATH)/system/vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_HD.so \
-    $(VENDOR_PATH)/system/vendor/lib/libaptXHD_encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaptXHD_encoder.so \
-    $(VENDOR_PATH)/system/vendor/lib/libaptX_encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaptX_encoder.so \
-    $(VENDOR_PATH)/system/vendor/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaptXHD_encoder.so \
-    $(VENDOR_PATH)/system/vendor/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaptX_encoder.so
-
-# Google Lens
-PRODUCT_COPY_FILES += \
-    $(VENDOR_PATH)/pixelstyle/etc/sysconfig/pixel_2017_exclusive.xml:system/etc/sysconfig/pixel_2017_exclusive.xml \
-    $(VENDOR_PATH)/pixelstyle/etc/sysconfig/pixel_2017.xml:system/etc/sysconfig/pixel_2017.xml \
-    $(VENDOR_PATH)/pixelstyle/etc/sysconfig/nexus.xml:system/etc/sysconfig/nexus.xml \
-    $(VENDOR_PATH)/pixelstyle/etc/sysconfig/google_build.xml:system/etc/sysconfig/google_build.xml
-
 PRODUCT_PACKAGES += \
-    MiuiCamera \
-    XiaomiParts
-
-# Remove packages
-PRODUCT_PACKAGES += \
-    Remove
+    MiuiCamera
 
 # Init
 PRODUCT_PACKAGES += \
