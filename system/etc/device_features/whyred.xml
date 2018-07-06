@@ -135,7 +135,7 @@
     <!--whether support object tracking in camera-->
     <bool name="support_object_track">false</bool>
     <!--whether support 4k recording in camera-->
-    <bool name="support_camera_4k_quality">false</bool>
+    <bool name="support_camera_4k_quality">true</bool>
     <!--whether support audio focus recording in camera-->
     <bool name="support_camera_audio_focus">false</bool>
     <!--whether use morpho lib in camera-->
@@ -311,4 +311,8 @@
     <integer name="support_camera_front_hdr_default_value">1</integer>
     <!--whether camera support portrait mode switch -->
     <bool name="camera_is_support_portrait_switch">true</bool>
+    <!--whether support square mode in camera-->
+    <bool name='support_camera_square_mode'>true</bool>
+    <!--whether support magic mirror in camera-->
+    <bool name='support_camera_magic_mirror'>true</bool>
 </features>
