@@ -25,12 +25,3 @@ LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 LOCAL_DEX_PREOPT := false
 LOCAL_OVERRIDES_PACKAGES := SnapdragonCamera Snap Camera2
 include $(BUILD_PREBUILT)
-
-SCVE_GMODEL_SYMLINK := $(TARGET_OUT_ETC)/scve/facereco/gModel.dat
-$(SCVE_GMODEL_SYMLINK): $(LOCAL_INSTALLED_MODULE)
-	@echo "scve gModel link: $@"
-	@mkdir -p $(dir $@)
-	@rm -rf $@
-	$(hide) ln -sf /vendor/etc/scve/facereco/$(notdir $@) $@
-
-ALL_DEFAULT_INSTALLED_MODULES += $(SCVE_GMODEL_SYMLINK)
