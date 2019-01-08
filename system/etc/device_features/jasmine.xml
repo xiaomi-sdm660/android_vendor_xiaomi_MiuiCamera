@@ -301,9 +301,9 @@
     <!-- whether camera vice back sensor is remoasic -->
     <bool name="is_vice_back_remoasic_camera">true</bool>
     <!--whether support portrait in camera-->
-    <bool name="is_support_portrait">false</bool>
+    <bool name="is_support_portrait">true</bool>
     <!--whether camera support portrait mode switch -->
-    <bool name="camera_is_support_portrait_switch">false</bool>
+    <bool name="camera_is_support_portrait_switch">true</bool>
     <!-- whether camera support AI lens entry -->
     <bool name="camera_support_ai_lens">false</bool>
     <!--whether taking legacy face beauty in camera-->
