@@ -19,6 +19,7 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_PATH)/system/etc/device_features/wayne.xml:system/etc/device_features/wayne.xml \
     $(VENDOR_PATH)/system/etc/device_features/clover.xml:system/etc/device_features/clover.xml \
     $(VENDOR_PATH)/system/etc/device_features/jasmine.xml:system/etc/device_features/jasmine.xml \
+    $(VENDOR_PATH)/system/etc/device_features/jasmine.xml:system/etc/device_features/jasmine_sprout.xml \
     $(VENDOR_PATH)/system/etc/default-permissions/miuicamera-permissions.xml:system/etc/default-permissions/miuicamera-permissions.xml \
     $(VENDOR_PATH)/system/lib/libCameraEffectJNI.so:system/lib/libCameraEffectJNI.so \
     $(VENDOR_PATH)/system/lib/libblurbuster.so:system/lib/libblurbuster.so \
