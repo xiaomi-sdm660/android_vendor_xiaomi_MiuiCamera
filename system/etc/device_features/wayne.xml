@@ -109,7 +109,7 @@
     <!--whether support burst shoot denoise in camera-->
     <bool name="support_camera_burst_shoot_denoise">true</bool>
     <!--whether support solid recording in camera-->
-    <bool name="support_camera_movie_solid">true</bool>
+    <bool name="support_camera_movie_solid">false</bool>
     <!--whether support shader effect in camera-->
     <bool name="support_camera_shader_effect">true</bool>
     <!-- whether support dynamic light spot in portrait module  -->
