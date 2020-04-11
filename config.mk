@@ -20,8 +20,9 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_PATH)/system/etc/device_features/clover.xml:system/etc/device_features/clover.xml \
     $(VENDOR_PATH)/system/etc/device_features/jasmine.xml:system/etc/device_features/jasmine.xml \
     $(VENDOR_PATH)/system/etc/device_features/jasmine.xml:system/etc/device_features/jasmine_sprout.xml \
-    $(VENDOR_PATH)/system/etc/default-permissions/miuicamera-permissions.xml:system/etc/default-permissions/miuicamera-permissions.xml \
-    $(VENDOR_PATH)/system/etc/permissions/miuicamera-privapp-permissions.xml:system/etc/permissions/miuicamera-privapp-permissions.xml \
+    $(VENDOR_PATH)/system/etc/default-permissions/anxcamera-permissions.xml:system/etc/default-permissions/anxcamera-permissions.xml \
+    $(VENDOR_PATH)/system/etc/permissions/privapp-permissions-anxcamera.xml:system/etc/permissions/privapp-permissions-anxcamera.xml \
+    $(VENDOR_PATH)/system/etc/sysconfig/anxcamera-hiddenapi-package-whitelist.xml:system/etc/sysconfig/anxcamera-hiddenapi-package-whitelist.xml \
     $(VENDOR_PATH)/system/lib/libCameraEffectJNI.so:system/lib/libCameraEffectJNI.so \
     $(VENDOR_PATH)/system/lib/libblurbuster.so:system/lib/libblurbuster.so \
     $(VENDOR_PATH)/system/lib/libfiltergenerator.so:system/lib/libfiltergenerator.so \
@@ -52,5 +53,7 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_PATH)/system/lib64/libmorpho_panorama.so:system/lib64/libmorpho_panorama.so \
     $(VENDOR_PATH)/system/lib64/libmorpho_panorama_gp.so:system/lib64/libmorpho_panorama_gp.so \
 
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(VENDOR_PATH)/system/priv-app/ANXCamera/lib/arm64,system/priv-app/ANXCamera/lib/arm64)
+
 PRODUCT_PACKAGES += \
-    MiuiCamera
+     ANXCamera
