@@ -106,6 +106,8 @@
     <bool name="support_camera_movie_solid">true</bool>
     <!--whether support shader effect in camera-->
     <bool name="support_camera_shader_effect">true</bool>
+    <!-- whether camera support India special filter -->
+    <bool name="camera_support_india_filter">true</bool>
     <!--whether support skin beauty in camera-->
     <bool name="support_camera_skin_beauty">true</bool>
     <!--whether support age detection in camera-->
@@ -124,8 +126,6 @@
     <bool name="support_camera_boost_brightness">true</bool>
     <!--whether taking lower size panorama in camera-->
     <bool name="is_lower_size_panorama">true</bool>
-    <!--whether taking full size effect image in camera-->
-    <bool name="is_full_size_effect">true</bool>
     <!--whether taking lower size effect image in camera-->
     <bool name="is_lower_size_effect">false</bool>
     <!--whether support aohdr in camera-->
@@ -148,7 +148,7 @@
     <bool name="support_camera_manual_function">true</bool>
     <!--whether capture when user press down the shutter in camera instead of left the shutter-->
     <bool name="support_camera_press_down_capture">true</bool>
-    <bool name="front_fingerprint_sensor">false</bool>
+    <bool name="front_fingerprint_sensor">true</bool>
     <!--whether support capture in torch mode in camera-->
     <bool name="support_camera_torch_capture">true</bool>
     <!--whether freeze preview after hdr capture in camera-->
@@ -173,14 +173,14 @@
     <bool name="support_camera_tilt_shift">true</bool>
     <!--whether support magic mirror in camera-->
     <bool name="support_camera_magic_mirror">true</bool>
+    <!-- whether this device is Android one -->
+    <bool name="is_android_one_device">true</bool>
     <!--whether support groupshot mode  in camera-->
     <bool name="support_camera_groupshot">true</bool>
     <!--whether rotate the final image in camera isp-->
     <bool name="is_camera_isp_rotated">false</bool>
     <!--whether support snap with screen off  in camera-->
     <bool name="support_camera_quick_snap">true</bool>
-    <!--whether support ai scene in camera -->
-    <bool name="camera_supported_ai_scene">true</bool>
     <!-- whether the device app permission detail show in provision-->
     <bool name="support_provision_app_permission">true</bool>
     <!--whether support pre-installed application-->
@@ -254,7 +254,6 @@
         <item>com.miui.yellowpage</item>
         <item>com.xiaomi.midrop</item>
         <item>com.android.midrive</item>
-        <item>com.xiaomi.drivemode</item>
     </string-array>
     <!--system data-app path list -->
     <string-array name="system_data_path_list">
@@ -275,12 +274,9 @@
         <item>/system/data-app/YellowPage/YellowPage.apk</item>
         <item>/system/data-app/MiDrop/MiDrop.apk</item>
         <item>/system/data-app/MiDrive/MiDrive.apk</item>
-        <item>/system/data-app/MiuiDriveMode/MiuiDriveMode.apk</item>
     </string-array>
     <!--whether show my device-->
     <bool name="support_my_device">true</bool>
-    <!-- whether support LDAC -->
-    <bool name="support_ldac">false</bool>
     <!--whether round corner-->
     <bool name="support_round_corner">true</bool>
     <!--battery capacity typ of the device-->
@@ -304,13 +300,14 @@
     <bool name="camera_is_support_portrait_switch">true</bool>
     <!-- whether camera support AI lens entry -->
     <bool name="camera_support_ai_lens">true</bool>
+    <bool name="camera_support_google_lens">true</bool>
     <!--whether taking legacy face beauty in camera-->
     <bool name="is_legacy_face_beauty">false</bool>
     <!--whether front camera support hdr or not-->
     <bool name="support_front_hdr">true</bool>
     <!-- Camera HDR default value -->
     <integer name="support_camera_hdr_default_value">3</integer>
-    <integer name="support_camera_front_hdr_default_value">1</integer>
+    <integer name="support_camera_front_hdr_default_value">3</integer>
 　　<!--whether front camera support hht or not-->
     <bool name="support_front_hht">true</bool>
     <!--whether front camera support bokeh or not-->
@@ -321,6 +318,8 @@
     <bool name="enhance_beauty_with_hht">true</bool>
     <!--whether support add watermark on bottom left of picture-->
     <bool name="support_picture_watermark">true</bool>
+    <!-- water mark default value -->
+    <bool name="camera_picture_watermark_default">false</bool>
     <!--whether need video stabilizatiion crop-->
     <bool name="disable_video_stabilization_in_speed_slow_mode">true</bool>
     <!--whether add algorithm in file name or not-->
@@ -335,16 +334,4 @@
     <bool name="support_camera_video_face_detection">true</bool>
     <!--camera max quality which support high frame rate,1:480 2:720 3:1080-->
     <integer name="support_camera_hfr_max_quality">3</integer>
-    <!--whether support intelligent switch between main & aux camera or not-->
-    <bool name="is_support_capture_intelligent_switch">true</bool>
-    <!--whether process clcc in hfp pending state-->
-    <bool name="process_clcc_in_pending_state">false</bool>
-    <!--whether camcorder support intelligent switch between main & aux camera or not-->
-    <bool name="is_support_video_intelligent_switch">false</bool>
-    <!--whether support freeform mode in game mode-->
-    <bool name="support_freeform_reply">true</bool>
-    <!--These region support face unlock-->
-    <string-array name="support_face_unlock_region_dom">
-        <item>CN</item>
-    </string-array>
 </features>

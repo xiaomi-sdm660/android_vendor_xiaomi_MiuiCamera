@@ -14,8 +14,10 @@
 
 VENDOR_PATH := vendor/xiaomi/MiuiCamera
 
+#specific files
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(VENDOR_PATH)/system/priv-app/ANXCamera/lib/arm64,system/priv-app/ANXCamera/lib/arm64)
 
+#etc files
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(VENDOR_PATH)/system/etc,system/etc)
 
 PRODUCT_PACKAGES += \
