@@ -75,7 +75,7 @@
     <!--whether the device supports steps_provider-->
     <bool name="support_steps_provider">true</bool>
     <!--whether the device support hall sensor-->
-    <bool name="support_hall_sensor">true</bool>
+    <bool name="support_hall_sensor">false</bool>
     <!--whether the device supports hifi-->
     <bool name="support_hifi">false</bool>
     <!--whether the device supports agps parameters-->
@@ -99,7 +99,7 @@
     <!--whether support burst shoot denoise in camera-->
     <bool name="support_camera_burst_shoot_denoise">true</bool>
     <!--whether support solid recording in camera-->
-    <bool name="support_camera_movie_solid">true</bool>
+    <bool name="support_camera_movie_solid">false</bool>
     <!--whether support shader effect in camera-->
     <bool name="support_camera_shader_effect">true</bool>
     <!-- whether camera support India special filter -->
@@ -107,15 +107,15 @@
     <!--whether support skin beauty in camera-->
     <bool name="support_camera_skin_beauty">true</bool>
     <!--whether support age detection in camera-->
-    <bool name="support_camera_age_detection">true</bool>
+    <bool name="support_camera_age_detection">false</bool>
     <!--whether support record location in camera-->
     <bool name="support_camera_record_location">true</bool>
     <!--whether support time watermark in camera-->
-    <bool name="support_camera_water_mark">true</bool>
+    <bool name="support_camera_water_mark">false</bool>
     <!--whether support new style time watermark in camera-->
-    <bool name="support_camera_new_style_time_water_mark">true</bool>
+    <bool name="support_camera_new_style_time_water_mark">false</bool>
     <!--whether support face info watermark in camera-->
-    <bool name="support_camera_face_info_water_mark">true</bool>
+    <bool name="support_camera_face_info_water_mark">false</bool>
     <!--whether support pause recording in camera-->
     <bool name="support_camera_video_pause">true</bool>
     <!--whether support boosting screen brightness in camera-->
@@ -124,8 +124,6 @@
     <bool name="is_lower_size_panorama">true</bool>
     <!--whether taking lower size effect image in camera-->
     <bool name="is_lower_size_effect">false</bool>
-    <!-- support nfc -->
-    <bool name="support_nfc">false</bool>
     <!--whether support aohdr in camera-->
     <bool name="support_camera_aohdr">false</bool>
     <!--whether support high frame recording in camera-->
@@ -133,9 +131,9 @@
     <!--whether support chroma flash in camera-->
     <bool name="support_chroma_flash">false</bool>
     <!--whether support object tracking in camera-->
-    <bool name="support_object_track">false</bool>
+    <bool name="support_object_track">true</bool>
     <!--whether support 4k recording in camera-->
-    <bool name="support_camera_4k_quality">false</bool>
+    <bool name="support_camera_4k_quality">true</bool>
     <!--whether support audio focus recording in camera-->
     <bool name="support_camera_audio_focus">false</bool>
     <!--whether use morpho lib in camera-->
@@ -167,11 +165,11 @@
     <!--whether listen frame with single subthread looper in camera-->
     <bool name="is_camera_preview_with_subthread_looper">true</bool>
     <!--whether add watermark in camera app-->
-    <bool name="is_camera_app_water_mark">true</bool>
+    <bool name="is_camera_app_water_mark">false</bool>
     <!--whether support tiltshift  in camera-->
     <bool name="support_camera_tilt_shift">true</bool>
     <!--whether support magic mirror in camera-->
-    <bool name="support_camera_magic_mirror">true</bool>
+    <bool name="support_camera_magic_mirror">false</bool>
     <!--whether support groupshot mode in camera-->
     <bool name="support_camera_groupshot">true</bool>
     <!--whether support snap with screen off  in camera-->
@@ -228,9 +226,6 @@
     <integer name="type_soter_finger_pay">2</integer>
     <!-- whether support double tap to wake up device -->
     <bool name="support_gesture_wakeup">true</bool>
-    <!--Led light features-->
-    <bool name="support_led_light">true</bool>
-    <bool name="support_led_color">false</bool>
     <bool name="support_audio_loopback">true</bool>
     <!--whether surpport paper mode animation-->
     <bool name="support_papermode_animation">true</bool>
@@ -251,8 +246,6 @@
     <!-- whether CN hardware can flash Global rom -->
     <bool name="enable_flash_global">false</bool>
     <bool name="support_new_silentmode">true</bool>
-    <!-- Support Sign Verify In Cust Partition-->
-    <bool name="support_sign_verify_in_cust">true</bool>
     <!--whether taking 18x9 ratio screen in camera-->
     <bool name="is_18x9_ratio_screen">false</bool>
     <!--whether support portrait in camera-->
@@ -273,7 +266,7 @@
     <!--whether support auto mirror in camera-->
     <bool name="enhance_beauty_with_hht">true</bool>
     <!--whether support add watermark on bottom left of picture-->
-    <bool name="support_picture_watermark">true</bool>
+    <bool name="support_picture_watermark">false</bool>
     <!--whether need video stabilizatiion crop-->
     <bool name="need_video_stabilization_crop">true</bool>
     <bool name="disable_video_stabilization_in_speed_slow_mode">true</bool>
@@ -281,7 +274,7 @@
     <bool name="enable_algorithm_in_file_suffix">false</bool>
     <!--whether enable face detection in video and funmode or not-->
     <bool name="support_camera_video_face_detection">true</bool>
-    <bool name="camera_supported_scene">false</bool>
+    <bool name="camera_supported_scene">true</bool>
     <bool name="camera_supported_ai_scene">true</bool>
     <bool name="camera_supported_front_ai_scene">true</bool>
     <bool name="camera_portrait_mode_supported_ai_scene">true</bool>
@@ -304,33 +297,5 @@
     <!-- whether support beauty menu in back portrait mode-->
     <bool name="support_camera_beauty_menu_in_back_portrait_mode">true</bool>
     <bool name="support_camera_adv_beauty_front_bokeh">false</bool>
-    <!--These region support face unlock-->
-    <string-array name="support_face_unlock_region_global">
-        <item>ID</item>
-        <item>IN</item>
-        <item>HK</item>
-        <item>TW</item>
-        <item>SG</item>
-        <item>MY</item>
-        <item>VN</item>
-        <item>IT</item>
-        <item>TR</item>
-        <item>ES</item>
-        <item>UA</item>
-        <item>PH</item>
-        <item>SA</item>
-        <item>AE</item>
-        <item>IL</item>
-        <item>QA</item>
-        <item>BH</item>
-        <item>OM</item>
-        <item>KW</item>
-        <item>CZ</item>
-        <item>BR</item>
-        <item>NP</item>
-        <item>LK</item>
-        <item>BD</item>
-    </string-array>
+
 </features>
-
-
